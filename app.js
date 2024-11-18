@@ -104,6 +104,8 @@ app.delete('/campgrounds/:id/reviews/:reviewId', catchAsync(async(req, res)=>{
     res.redirect(`/campgrounds/${id}`);
 }))
 
+
+
 app.all('*', (req, res, next)=>{
     next(new ExpressError('Page not found!!',404));
 })
