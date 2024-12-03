@@ -10,11 +10,12 @@
         <div class="row">
             <div class="col-md-4">
                 <%if(campground.images.length){%>
-                <img src="<%=campground.images[0].url%>" alt="" class="fluid">
+                    <img src="<%= campground.images[0].url %>" alt="" 
+                    class="img-fluid d-block" 
+                    style="width: 100%; height: 200px; object-fit: cover;">
                 <% }else{%>
-                <img src="https://res.cloudinary.com/dfmdqbghk/image/upload/v1732723004/YelpCamp/yxd0xlq79syvhcywgj5e.jpg" alt="" class="fluid">
+                <img src="https://res.cloudinary.com/dfmdqbghk/image/upload/v1732723004/YelpCamp/yxd0xlq79syvhcywgj5e.jpg" alt="" class="fluid"">
                 <% } %>
-
             </div>
             <div class="col-md-8">
                 <div class="card-body">
