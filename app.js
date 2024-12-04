@@ -107,6 +107,7 @@ app.use(helmet.contentSecurityPolicy({
             "data:",
             "https://res.cloudinary.com/dfmdqbghk/",         
             "https://api.maptiler.com/",
+            "https://images.unsplash.com/"
         ],
     }
 }))
