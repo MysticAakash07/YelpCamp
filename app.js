@@ -103,7 +103,7 @@ app.use(helmet.contentSecurityPolicy({
         objectSrc: [],
         imgSrc: [
             "'self'",
-            "'blob:'",
+            "blob:",
             "data:",
             "https://res.cloudinary.com/dfmdqbghk/",         
             "https://api.maptiler.com/",
