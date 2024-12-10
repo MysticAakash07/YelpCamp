@@ -20,7 +20,11 @@
             <div class="col-md-8">
                 <div class="card-body">
                     <h5 class="card-title"><%= campground.title %></h5>
-                    <p class="card-text"><%= campground.description %></p>
+                    <p class="card-text">
+                        <%= campground.description.length > 100 
+                            ? campground.description.substring(0, 200) + '...' 
+                            : campground.description %>
+                    </p>
                     <p class="card-text">
                         <small class="text-muted"><%= campground.location %></small>
                     </p>
